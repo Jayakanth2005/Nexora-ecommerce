@@ -1,0 +1,130 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "close": "Close",
+        "next": "Next",
+        "previous": "Previous",
+        "skip": "Skip",
+        "finish": "Finish",
+        "retry": "Retry"
+    },
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "cart": "Cart",
+        "checkout": "Checkout",
+        "language": "Language"
+    },
+    "products": {
+        "title": "Our Products",
+        "subtitle": "Discover our curated selection of premium tech products designed to enhance your digital lifestyle.",
+        "addToCart": "Add to Cart",
+        "outOfStock": "Out of Stock",
+        "inStock": "In Stock",
+        "onlyLeft": "Only {{count}} left",
+        "price": "${{price}}",
+        "features": {
+            "freeShipping": "Free Shipping",
+            "freeShippingDesc": "Free delivery on orders over $50",
+            "securePayment": "Secure Payment",
+            "securePaymentDesc": "Your payment information is safe with us",
+            "easyReturns": "Easy Returns",
+            "easyReturnsDesc": "30-day hassle-free return policy"
+        },
+        "empty": {
+            "title": "No Products Available",
+            "message": "We're currently updating our inventory. Please check back soon for new products."
+        }
+    },
+    "cart": {
+        "title": "Shopping Cart",
+        "empty": {
+            "title": "Your Cart is Empty",
+            "message": "Looks like you haven't added any items to your cart yet. Start shopping to fill it up!",
+            "continueShopping": "Continue Shopping"
+        },
+        "itemCount": "{{count}} item",
+        "itemCount_plural": "{{count}} items",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "tax": "Tax",
+        "total": "Total",
+        "free": "Free",
+        "clearCart": "Clear Cart",
+        "clearCartConfirm": "Are you sure you want to clear your cart?",
+        "proceedToCheckout": "Proceed to Checkout",
+        "freeShippingNotice": "Add ${{amount}} more for free shipping!",
+        "secureCheckout": "Secure checkout with SSL encryption",
+        "quantity": "Qty:",
+        "each": "${{price}} each",
+        "remove": "Remove {{name}} from cart",
+        "updateQuantity": "Update quantity"
+    },
+    "checkout": {
+        "title": "Checkout",
+        "subtitle": "Complete your purchase",
+        "contactInfo": "Contact Information",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "shippingAddress": "Shipping Address",
+        "streetAddress": "Street Address",
+        "city": "City",
+        "zipCode": "ZIP Code",
+        "paymentMethod": "Payment Method",
+        "creditCard": "Credit Card",
+        "paypal": "PayPal",
+        "orderSummary": "Order Summary",
+        "placeOrder": "Place Order",
+        "processing": "Processing...",
+        "backToCart": "Back to Cart",
+        "required": "Required field",
+        "emptyCart": {
+            "title": "Your Cart is Empty",
+            "message": "Add some items to your cart before checking out.",
+            "startShopping": "Start Shopping"
+        },
+        "success": {
+            "title": "Order Confirmed!",
+            "message": "Thank you for your purchase. We'll send you a confirmation email shortly.",
+            "continueShopping": "Continue Shopping"
+        }
+    },
+    "tutorial": {
+        "welcome": {
+            "title": "Welcome to Nexus",
+            "message": "Your premium destination for tech products. Let us show you around!"
+        },
+        "products": {
+            "title": "Browse Products",
+            "message": "Explore our curated collection of premium tech products with detailed descriptions and competitive prices."
+        },
+        "cart": {
+            "title": "Manage Your Cart",
+            "message": "Add items to your cart, adjust quantities, and keep track of your total before checkout."
+        },
+        "checkout": {
+            "title": "Secure Checkout",
+            "message": "Complete your purchase with our secure checkout process and multiple payment options."
+        },
+        "features": {
+            "title": "Premium Features",
+            "message": "Enjoy free shipping, secure payments, easy returns, and excellent customer support."
+        }
+    },
+    "notifications": {
+        "itemAdded": "{{name}} added to cart",
+        "itemRemoved": "{{name}} removed from cart",
+        "itemUpdated": "Cart updated",
+        "cartCleared": "Cart cleared",
+        "orderPlaced": "Order placed successfully",
+        "networkError": "Network error - please check your connection",
+        "serverError": "Server error - please try again later",
+        "fetchError": "Failed to load data"
+    }
+}
