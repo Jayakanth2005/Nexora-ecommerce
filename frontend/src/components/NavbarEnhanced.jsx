@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, Menu, X, Globe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/CartContextEnhanced';
 
 const Navbar = () => {
     const { cart } = useCart();
@@ -58,10 +58,10 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden md:flex items-center space-x-8 ">
                         {navItems.map((item) => (
+                            <div key={item.path}>
                             <Link
-                                key={item.path}
                                 to={item.path}
                                 className={`font-medium transition-all duration-200 relative ${isActive(item.path)
                                         ? 'text-blue-600'
@@ -93,6 +93,7 @@ const Navbar = () => {
                                     />
                                 )}
                             </Link>
+                            </div>
                         ))}
 
                         {/* Language Selector */}

@@ -32,8 +32,8 @@ const cartReducer = (state, action) => {
 
         case CART_ACTIONS.SET_CART: {
             const { items } = action.payload;
-            const total = items.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
-            const itemCount = items.reduce((sum, item) => sum + item.quantity, 0);
+            const total = items?.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
+            const itemCount = items?.reduce((sum, item) => sum + item.quantity, 0);
 
             return {
                 ...state,
@@ -50,8 +50,8 @@ const cartReducer = (state, action) => {
         case CART_ACTIONS.REMOVE_ITEM_SUCCESS:
         case CART_ACTIONS.CLEAR_CART_SUCCESS: {
             const { items } = action.payload;
-            const total = items.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
-            const itemCount = items.reduce((sum, item) => sum + item.quantity, 0);
+            const total = items?.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
+            const itemCount = items?.reduce((sum, item) => sum + item.quantity, 0);
 
             return {
                 ...state,

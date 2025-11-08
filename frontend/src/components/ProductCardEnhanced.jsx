@@ -31,7 +31,7 @@ const ProductCard = ({ product }) => {
     };
 
     // Placeholder image if no product image is provided
-    const imageUrl = product.image || 'https://via.placeholder.com/300x200?text=Product+Image';
+    const imageUrl = product.imageUrl
 
     const isOutOfStock = product.stock === 0;
     const isLowStock = product.stock > 0 && product.stock <= 5;
@@ -48,9 +48,9 @@ const ProductCard = ({ product }) => {
                     src={imageUrl}
                     alt={product.name}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/300x200?text=Product+Image';
-                    }}
+                    // onError={(e) => {
+                    //     e.target.src = 'https://via.placeholder.com/300x200?text=Product+Image';
+                    // }}
                 />
 
                 {/* Discount Badge */}

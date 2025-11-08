@@ -6,7 +6,7 @@ import TutorialProvider from './components/TutorialProvider';
 import NavbarEnhanced from './components/NavbarEnhanced';
 import ProductsPageEnhanced from './pages/ProductsPageEnhanced';
 import CartPage from './pages/CartPage';
-import CheckoutPage from './pages/CheckoutPage';
+// import CheckoutPage from './pages/CheckoutPage';
 import { LoadingOverlay } from './components/Loading';
 import { healthAPI } from './services/api';
 import './utils/i18n';
@@ -66,7 +66,7 @@ function App() {
                                 <Routes>
                                     <Route path="/" element={<ProductsPageEnhanced />} />
                                     <Route path="/cart" element={<CartPage />} />
-                                    <Route path="/checkout" element={<CheckoutPage />} />
+                                    {/* <Route path="/checkout" element={<CheckoutPage />} /> */}
                                 </Routes>
                             </main>
                         </div>

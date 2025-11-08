@@ -87,11 +87,11 @@ export const cartAPI = {
     },
 
     // Add item to cart
-    addItem: async (productId, quantity = 1) => {
+    addItem: async (productId, qty = 1) => {
         try {
             const response = await apiClient.post('/cart', {
                 productId,
-                quantity,
+                qty,
             });
             return response.data;
         } catch (error) {
@@ -100,10 +100,10 @@ export const cartAPI = {
     },
 
     // Update cart item quantity
-    updateItem: async (cartItemId, quantity) => {
+    updateItem: async (cartItemId, qty) => {
         try {
             const response = await apiClient.put(`/cart/${cartItemId}`, {
-                quantity,
+                qty,
             });
             return response.data;
         } catch (error) {

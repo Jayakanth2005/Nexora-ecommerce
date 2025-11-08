@@ -23,7 +23,7 @@ const ProductsPage = () => {
             setIsLoading(true);
             setError(null);
             const data = await productsAPI.getAll();
-            setProducts(data.products || data);
+            setProducts(data.data);
         } catch (error) {
             console.error('Failed to load products:', error);
             setError(error.message);
@@ -146,7 +146,7 @@ const ProductsPage = () => {
 
     if (isLoading) {
         return (
-            <div className="min-h-screen bg-neutral-50">
+            <div className="min-h-screen bg-neut">
                 {/* Header Section */}
                 <div className="bg-white border-b border-neutral-200">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
